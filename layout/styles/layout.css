@@ -52,11 +52,31 @@ File: Layout CSS
 /* Content */
 .container .content{}
 
-.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
-.sectiontitle .heading{margin:0; padding:0; line-height:1;}
-
+.sectiontitle {
+	display: block;
+	max-width: 55%;
+	margin: 0 auto 40px;
+	text-align: center;
+	background: none;
+	color: #000000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	line-height: 1.2;
+  }
+	
+.sectiontitle .heading{
+margin: 0;
+padding: 0;
+line-height: 1.2;
+font-size: 2.5em;
+font-family: 'Helvetica', sans-serif;
+font-weight: bold;
+letter-spacing: 2px;
+color: #333;
+}
 #introblocks{}
-#introblocks ul{text-align:center;}
+#introblocks ul{text-align:left;}
 #introblocks ul li{}
 #introblocks ul li article{}
 #introblocks ul li article i{margin-bottom:30px; font-size:42px}
@@ -282,7 +302,7 @@ td{border-width:0 1px;}
 .faico{margin:0; padding:0; list-style:none;}
 .faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
 .faico li:last-child{margin-right:0;}
-.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:left;}
 
 .faico a{color:#474747; background-color:#DBE5E7;}
 .faico a:hover{color:#FFFFFF;}
@@ -316,8 +336,28 @@ input:focus, textarea:focus, *:required:focus{border-color:#829DA2;}
 .overlay.light{color:#474747;}
 .overlay.light::after{background-color:rgba(255,255,255,.7);}
 
-.btn, .btn.inverse:hover{color:#474747; background-color:#DBE5E7; border-color:#829DA2;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn-list {
+	list-style: disc;
+    padding-left: 18px;
+	margin: 0;
+  }
+
+  .btn-list li {
+    margin-bottom: 0px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 5px 2px;
+    border: 0px solid #829DA2;
+    color: #474747;
+    background-color: transparent;
+  }
+
+  .btn:hover {
+    color: #fff;
+    background-color: #829DA2;
+  }
 
 .imgover:hover::before{background:rgba(130,157,162,.5);/* #829DA2 */}
 .imgover, .imgover:hover::after{color:#FFFFFF;}
@@ -461,7 +501,7 @@ table a, #comments a{background-color:inherit;}
 
 	#latest article{max-width:348px;}
 
-	.cta > :first-child{margin-top:0; text-align:center;}
+	.cta > :first-child{margin-top:0; text-align:left;}
 	.cta footer a{display:inline-block;}
 
 	#footer{padding-bottom:50px;}/* Not required, just looks a little better */
