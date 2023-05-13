@@ -1,11 +1,6 @@
 @charset "utf-8";
 /*
-Template Name: Yeinydd
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
+ 
 File: Layout CSS
 */
 
@@ -27,17 +22,17 @@ File: Layout CSS
 #header{padding:0 15px; border:solid; border-width:1px 0;}
 
 #header #logo{margin:28px 0 0 0;}
-#header #logo h1{margin:0; padding:0; font-size:22px; line-height:1; text-transform:uppercase;}
+#header #logo h1{margin:0; padding:0; font-size:22px; line-height:1;}
 
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:180px 0;}
+#pageintro{padding:80px 0;}
 
-#pageintro article{display:block; max-width:60%; margin:0 auto; text-align:center;}
-#pageintro .heading{margin-bottom:20px; font-size:4rem;}
+#pageintro article{display:block; max-width:90%; margin:0 auto; text-align:left;}
+#pageintro .heading{margin-bottom:20px; font-size:3rem;}
 #pageintro p{max-width:75%; margin:0 auto;}
-#pageintro footer{margin-top:50px;}
+#pageintro footer{margin-top:10px;}
 #pageintro footer form{display:block; position:relative; max-width:50%; margin:0 auto; overflow:hidden;}
 #pageintro footer input, #pageintro footer button{display:block; height:44px; border:none;}
 #pageintro footer input{width:100%; padding:5px 40px 5px 15px;}
@@ -56,11 +51,11 @@ File: Layout CSS
 	display: block;
 	max-width: 55%;
 	margin: 0 auto 40px;
-	text-align: center;
+	text-align: left;
 	background: none;
 	color: #000000;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 32px;
+	font-size: 18px;
 	font-weight: normal;
 	line-height: 1.2;
   }
@@ -69,7 +64,7 @@ File: Layout CSS
 margin: 0;
 padding: 0;
 line-height: 1.2;
-font-size: 2.5em;
+font-size: 1.5em;
 font-family: 'Helvetica', sans-serif;
 font-weight: bold;
 letter-spacing: 2px;
@@ -111,7 +106,7 @@ color: #333;
 #references{}
 
 #references .ref-sort{display:block; margin-bottom:50px; text-align:center;}
-#references .ref-sort ul{margin:0; padding:0; list-style:none; text-transform:uppercase;}
+#references .ref-sort ul{margin:0; padding:0; list-style:none;}
 #references .ref-sort li{display:inline-block; position:relative; margin:0 10px 0 0; padding:0 20px 0 0;}
 #references .ref-sort li::after{position:absolute; top:0; right:0; content:"/";}
 #references .ref-sort li:last-child{margin:0; padding:0;}
@@ -227,7 +222,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 /* Top Navigation */
 #mainav{}
-#mainav ul{text-transform:uppercase;}
+#mainav ul{}
 #mainav ul ul{position:absolute; width:180px; text-transform:none; z-index:9999;}
 #mainav ul ul ul{left:180px; top:0;}
 #mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
@@ -338,25 +333,26 @@ input:focus, textarea:focus, *:required:focus{border-color:#829DA2;}
 
 .btn-list {
 	list-style: disc;
-    padding-left: 18px;
+	padding-left: 18px;
 	margin: 0;
   }
-
+  
   .btn-list li {
-    margin-bottom: 0px;
+	margin-bottom: 0px;
   }
-
+  
   .btn {
-    display: inline-block;
-    padding: 5px 2px;
-    border: 0px solid #829DA2;
-    color: #474747;
-    background-color: transparent;
+	display: inline-block;
+	padding: 5px 0px;
+	border: 0px solid #829DA2;
+	color: #474747;
+	background-color: transparent;
+	text-decoration: none; /* Remove the default text underline */
   }
-
+  
   .btn:hover {
-    color: #fff;
-    background-color: #829DA2;
+	text-decoration: underline; /* Underline on hover */
+	background-color: transparent; /* Remove the background color change on hover */
   }
 
 .imgover:hover::before{background:rgba(130,157,162,.5);/* #829DA2 */}
@@ -485,11 +481,11 @@ table a, #comments a{background-color:inherit;}
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
-	#header{padding:30px 0; text-align:center;}
+	#header{padding:30px 0; text-align:left;}
 	#header #logo{margin:0 0 20px 0;}
 
 	#pageintro article, #pageintro p{max-width:none; margin:auto;}
-	#pageintro .heading{font-size:2rem;}
+	#pageintro .heading{font-size:1rem;}
 
 	.sectiontitle{max-width:none; margin-bottom:50px;}
 

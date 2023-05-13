@@ -1,11 +1,6 @@
 @charset "utf-8";
 /*
-Template Name: Yeinydd
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
+ 
 File: Framework CSS
 */
 
@@ -53,6 +48,10 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 .imgover:hover::before, .imgover:hover::after{opacity:1;}
 
 
+  html, body {
+    background-color: black;
+  }
+
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
 body, input, textarea, select{font-family:Verdana, Geneva, sans-serif;}
@@ -71,7 +70,7 @@ label{margin-bottom:5px;}
 
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:22px; line-height:normal; font-weight:normal; text-transform:capitalize;}
+h1, h2, h3, h4, h5, h6, .heading{margin:0 0 0 0; font-size:22px; line-height:normal; font-weight:normal;}
 .heading.nospace{margin-bottom:0;}
 
 address{font-style:normal; font-weight:normal;}
